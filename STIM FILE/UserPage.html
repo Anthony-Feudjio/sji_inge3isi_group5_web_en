@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../Css/UserPage.css">
+    <link rel="stylesheet" href="../Css/style.css">
+</head>
+<script>
+    var theme = localStorage.getItem("color");
+if(theme){
+    document.documentElement.style.setProperty('-mainColor',theme)
+}
+</script>
+<body>
+
+    <H3><CENTER>PERSONALIZE YOUR PROFILE 😆 <span class="tip"></span></CENTER></H3>
+    <!-- <button class="continue_learning_button" onclick="showPopup()">Continue Learning</button> -->
+
+    <div class="logo_select">
+        <div class="proPic"> 
+            <div class="profile_picture"></div>
+            <div class="logo_options">
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100207.jpg); background-position: center; background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100228.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100215.jpg); background-position: center;background-size: cover;" ></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100229.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100229.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100279.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/3d-illustration-with-online-avatar_23-2151303093.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/3d-render-avatar-character_23-2150611722.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/3d-render-avatar-character_23-2150611707.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/3d-render-avatar-character_23-2150611731.jpg); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/3d-render-avatar-character_23-2150611771.avif); background-position: center;background-size: cover;"></div>
+                <div class="profile_picture_choice" style="background-image: url(../Images/androgynous-avatar-non-binary-queer-person_23-2151100190.jpg); background-position: center;background-size: cover;"></div>
+            </div>
+        </div>
+       
+
+        <div class="infoPerso"> 
+            <label for="pseudo" style="color:white">Your Pseudo : </label>
+            <input class="namy" type="text" style="outline: 3.45px solid var(--mainColor);" required>
+            <input class="clorCh" type="color" id="colorPicker">
+            <button class="button-37" onclick="changeColor()">Change Theme</button>
+        </div>
+       
+        <div class="buttons"> 
+            <button class="but_cancel" onclick="goBack()">Cancel</button>
+            <a href="Menu.html" class="but_finish">Finish</a>
+            
+        </div>
+       
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JavaScript/UserPage.js"></script>
+
+</body>
+</html>

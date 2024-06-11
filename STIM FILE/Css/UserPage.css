@@ -1,0 +1,177 @@
+
+img,.profile_picture,.profile_picture_choice {
+    border: 1px solid #3688cb60;
+}
+
+
+.continue_learning_button {
+    background-color: var(--mainColor); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: 850px;
+    position: relative;
+    top: -55px;
+
+}
+.continue_learning_button {
+    /* Your button styles */
+    margin-top: 20px; /* Adjust as needed */
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-10px); /* Adjust the bouncing height */
+    }
+}
+
+
+.profile_picture{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+    background-size: cover;
+}
+.logo_options .profile_picture_choice{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background-size: cover;
+    
+}
+.logo_options{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.logo_select{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    padding: 2em;
+    border-radius: 25px;
+    width: 40em;
+    margin: auto;
+    box-shadow: 0 0px 12px var(--mainColor);
+    backdrop-filter: blur(33px);
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+.but_finish{
+    margin-left: 2em;
+    background-color: var(--mainColor);
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    text-decoration: none;
+}   
+.proPic{
+    display: grid ;
+    align-items: center;
+    grid-template-columns: 1fr 5fr;
+    margin-bottom: 1.75em;
+}
+
+.but_finish:hover{
+    scale: 1.2;
+    background-color: green;
+    color: aliceblue;
+    cursor: pointer;
+}
+.but_cancel{
+    margin-left: 2em;
+    background-color: rgb(219, 45, 45);
+    border: none;
+    border-radius: 20px;
+    padding: 1em;
+    color: white;
+} 
+
+.but_cancel:hover{
+    scale: 1.2;
+    background-color: rgb(128, 0, 0);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.infoPerso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.namy{
+    height: 40px;
+    width:250px;
+    box-shadow: 0 0px  5px var(--mainColor);
+    border: 0;
+    border-radius: 25px;
+    margin-left: 1em;
+    font-size: large;
+    padding: 0 .5em ;
+}
+body{
+    background-color: #D9DAD9;
+} 
+
+.clorCh{
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    box-shadow: 0 0px  5px var(--mainColor);
+    margin-left: 1em;
+    margin-right: 1em;
+    scale: 0.6;
+}
+
+h3{
+    color: white;
+}
+/* CSS */
+.button-37 {
+  background-color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}

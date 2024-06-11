@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="/Related-files/KIDZIK-icon.png">
+    <title>KidZik - Dashboard</title>
+    <link rel="stylesheet" href="/Main/welcomePageStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/trial.css">
+</head>
+<style>
+    .item-menu button{
+        background-color: rgb(255, 255, 255);
+        font-size: 40px;
+        border:3.5px solid #fdb40954 ;
+    }
+    .item-menu button:focus{
+        outline: none;
+        animation: bounce 1.5s infinite;
+    }
+    .item-menu{
+        padding-top: 285px;
+        background-image: url('/Related-files/GammeMusicale.png');
+        background-size:contain;
+        grid-template-rows: repeat(1,100px);
+        width: 540px;
+        height: 390px;
+        background-repeat: no-repeat;
+        grid-template-columns: repeat(8,63.25px);
+        gap: 0.8%;
+    }
+</style>
+<body>
+<div class="Right-menu" style="height: 1000px;">
+
+    <h2 style="margin-bottom:3.5%;Top:0;color:#fdb409;text-shadow: 1px 1px 2px rgba(90, 85, 85, 0.459)" >Let's learn the 7 fundamental notes</h2>
+
+    <!-- <img style="margin-bottom:3.5%;" src="/Related-files/GammeMusicale.png" alt="" height="200px" > -->
+    <img style="margin-bottom:3.5%;border-radius: 5%;box-shadow: 1px 1px 10px  #f1e698f5;" src="/Related-files/GammeMultiColored.jpg" alt="" height="200px">
+    <div class="item-menu">
+        <button onclick="playSound('guitar-sound');">
+            <span style="color: red;" class="btn-text">Do</span>
+        </button>
+        <button onclick="playSound('piano-sound');">
+            <span style="color: orange;" class="btn-text">Re</span>
+        </button>
+        <button onclick="playSound('harp-sound');">
+            <span style="color: yellow;" class="btn-text">Mi</span>
+        </button>
+        <button onclick="playSound('trumpet-sound');">
+            <span style="color: rgb(19, 194, 19);" class="btn-text">Fa</span>
+        </button>
+        <button onclick="playSound('saxophone-sound');">
+            <span style="color: blue;" class="btn-text">Sol</span>
+        </button>
+        <button onclick="playSound('violin-sound');">
+            <span style="color: indigo;" class="btn-text">La</span>
+        </button>
+        <button onclick="playSound('flute-sound');">
+            <span style="color: violet;" class="btn-text">Ti</span>
+        </button>
+        <button onclick="playSound('accordion-sound');">
+            <span style="color: Pink;" class="btn-text">Do</span>
+        </button>
+    </div>
+                <!-- <img src="/Related-files/GammeMusicale.png" alt=""> -->
+</div>
+</body>
+</html>

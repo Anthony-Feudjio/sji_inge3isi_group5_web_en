@@ -1,0 +1,14 @@
+:root{
+    --mainColor : #3699cb;
+    --secondaryColor : ;
+}
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../Images/grm.jpg);
+    background-size: cover;
+}
+.profile_picture_choice:hover{
+    scale: 1.2;
+}
