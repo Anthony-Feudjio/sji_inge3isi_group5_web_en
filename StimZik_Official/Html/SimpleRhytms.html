@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/SimpleRythms.css">
+</head>
+<body>
+    <div class="Header">
+        <div class="proPiss">
+            <button style="border: 0;
+            background: none; cursor: pointer;" onclick="window.history.back()"><img id="img1" src="../Images/Web_Icon.png" alt=""></button>
+            <p id="p1" style="font-size: 40px;">Stimzik</p>
+        </div>
+        <div class="GEN">
+            <marquee behavior="" direction="" ><h2 style="color: var(--mainColor);">STIMZIK BY STIM AND TONY</h2></marquee>
+        </div>
+        <div class="profileLink">
+            <span style="font-size: 020px;">Welcome    </span> , <span class="tip" style="font-size: 020px; font-weight: bolder;"></span>
+            <a href="../Html/UserPageInfo.html"><div class="profile_picture"></div></a>
+        </div>
+    </div>
+
+    <div class="rythm-container">
+        <h1><center>Learn Simple Music Rhythms</center></h1>
+        <p><center>Click the buttons below to hear different rhythms!</center></p>
+        <div class="rhythm-buttons">
+            <button class="rhythm-button" onclick="playRhythm('rhythm1')">Accordion</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm2')">Guitar</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm3')">Drum</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm4')">Flute</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm5')">Piano</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm6')">Trumpet</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm7')">Saxophone</button>
+            <button class="rhythm-button" onclick="playRhythm('rhythm8')">Violin</button>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../JavaScript/SimpleRythms.js"></script>
+</html>
