@@ -1,0 +1,297 @@
+
+.Header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 15px;
+    padding: 7px 25px;
+    backdrop-filter: 33px;
+    border: 1px solid var(--mainColor) ;
+    margin: auto;
+    margin-bottom: 3em;
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    height: 70px;
+    width: 80%;
+    align-items: center;
+  }
+  .proPiss{
+    height: 3px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .proPiss img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  #p1{
+    font-size: 20px;
+    margin-left:10px ;
+    font-weight: bold;
+    margin-right: 10px;
+  
+  }
+  
+  
+  .tip{
+    margin-left: 10px;
+    color: var(--mainColor);
+  }
+  
+  .profile_picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-left: 20px;
+    scale: 2;
+  }
+  .profileLink{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+  }
+  
+  .bodyquiz-div{
+      background-color: #0a0505ab;
+      width: 70%;
+      height: 350px;
+      margin: 20px auto;
+      border-radius: 20px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      
+  }
+  .intro-text {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1.6;
+      width: 830px;
+  }
+  
+  /* Add this CSS to your existing InteractiveQuiz.css file */
+  
+  .container {
+      display: flex;
+      margin-left: 20px;
+  }
+  
+  .buttons-div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 0px;
+      margin-top: 50px;
+      margin-left: 50px;
+  }
+  
+  .button1 {
+      cursor: pointer;
+      font-weight: 700;
+      font-family: Helvetica,"sans-serif";
+      transition: all .2s;
+      padding: 10px 20px;
+      border-radius: 100px;
+      background: var(--mainColor);
+      border: 1px solid transparent;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      margin-top: 40px;
+    }
+    
+    .button1:hover {
+      background: var(--mainColor);
+    }
+    
+    .button1 > svg {
+      width: 34px;
+      margin-left: 10px;
+      transition: transform .3s ease-in-out;
+    }
+    
+    .button1:hover svg {
+      transform: translateX(5px);
+    }
+    
+    .button1:active {
+      transform: scale(0.95);
+    }
+    
+    .cta {
+      position: relative;
+      margin: auto;
+      padding: 12px 18px;
+      transition: all 0.2s ease;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    
+    .cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 50px;
+      background: #b1dae7;
+      width: 45px;
+      height: 45px;
+      transition: all 0.3s ease;
+    }
+    
+    .cta span {
+      position: relative;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #234567;
+    }
+    
+    .cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #234567;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+    
+    .cta:hover:before {
+      width: 100%;
+      background: #b1dae7;
+    }
+    
+    .cta:hover svg {
+      transform: translateX(0);
+    }
+    
+    .cta:active {
+      transform: scale(0.95);
+    }
+    
+    /* Add this CSS to your existing InteractiveQuiz.css file */
+  
+  /* Ensure quiz-container is centered */
+#quiz-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+#next-btn {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  transition: all 0.2s ease;
+  margin-right: 100px;
+  margin-top: -10px;
+}
+
+#next-btn:active {
+  transform: scale(0.96);
+}
+
+#next-btn:before,
+#next-btn:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+#next-btn:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--mainColor) 20%, transparent 30%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--mainColor) 15%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+#next-btn:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--mainColor) 15%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%),
+    radial-gradient(circle, var(--mainColor) 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}

@@ -1,0 +1,135 @@
+:root{
+    --mainColor : #3699cb;
+    --secondaryColor : ;
+}
+*{
+    font-family: sans-serif;
+}
+body{
+    background-image: url(../Images/grm.jpg);
+    background-size: cover;
+}
+.profile_picture_choice:hover{
+    scale: 1.2;
+}
+
+#p1::first-letter{
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+  
+  .cta:active {
+    transform: scale(0.95);
+  }
+  
+  
+.Header{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 15px;
+  padding: 7px 25px;
+  backdrop-filter: 33px;
+  border: 1px solid var(--mainColor) ;
+  margin: auto;
+  margin-bottom: 3em;
+  background-color: #ccc;
+  border-radius: 20px;
+  box-shadow: 0 0 10px grey;
+  height: 70px;
+  width: 80%;
+  align-items: center;
+}
+.proPiss{
+  height: 3px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.proPiss img{
+  width: 60px;
+  height: 60px;
+}
+
+#p1{
+  font-size: 20px;
+  margin-left:10px ;
+  font-weight: bold;
+  margin-right: 10px;
+
+}
+
+
+.tip{
+  margin-left: 10px;
+  color: var(--mainColor);
+}
+
+.profile_picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid;
+  margin-left: 20px;
+  scale: 2;
+}
+.profileLink{
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
