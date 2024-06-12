@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <link rel="stylesheet" href="../Css/EarTraining.css">
+    <script src="../JavaScript/UserPage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="Header">
+            <div class="proPiss">
+                <button style="border: 0;
+                background: none; cursor: pointer;" onclick="window.history.back()"><img id="img1" src="../Images/Web_Icon.png" alt=""></button>
+                <p id="p1" style="font-size: 40px;">Stimzik</p>
+            </div>
+            <div class="GEN">
+                <marquee behavior="" direction="" ><h2>STIMZIK BY STIM AND TONY</h2></marquee>
+            </div>
+            <div class="profileLink">
+                <span style="font-size: 020px;">Welcome    </span> , <span class="tip" style="font-size: 020px; font-weight: 500;"></span>
+                <a href="../Html/UserPage.html"><div class="profile_picture"></div></a>
+            </div>
+        </div>
+    
+        <div class="exercise-container">
+            <h1><center>Ear Training Exercise</center></h1>
+            <p><center>Listen to the note and select the correct one:</center></p>
+            <center><button onclick="playNotes()" id="plBut">Play Note</button></center>
+
+            <div class="piano">
+                <button style="margin-left: 0px;" id="j1" class="pioBut">DO</button>
+                <button style="width: 81px;" id="j2" class="pioBut">Re</button>
+                <button id="j3" class="pioBut">MI</button>
+                <button id="j4" class="pioBut">FA</button>
+                <button id="j5" class="pioBut">SOL</button>
+                <button style="width: 81px;" id="j6" class="pioBut">LA</button>
+                <button style="width: 81px;" id="j7" class="pioBut">TI</button>
+            </div>
+           
+            <center><p id="result"></p></center>
+        
+            <div id="progress">
+                <div id="progress-bar"></div>
+            </div>
+            
+        </div>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../JavaScript/EarTraining.js"></script>
+    
+</body>
+</html>
