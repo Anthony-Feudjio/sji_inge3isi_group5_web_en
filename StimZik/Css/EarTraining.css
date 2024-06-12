@@ -1,0 +1,201 @@
+#note-buttons button{
+    padding: 10px 30px;
+    color: aliceblue;
+    width: fit-content;
+    border: 1px solid white;
+    box-shadow: 0 0 5px var(--mainColor);
+    margin-top: 30px;
+    align-self: center;
+    color: black;
+    margin:  15px;
+    border-radius: 15px;
+    border: 0;
+}
+
+h2{
+    color: var(--mainColor);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#note-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#note-buttons button:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 15px;
+    padding: 7px 25px;
+    backdrop-filter: 33px;
+    border: 1px solid var(--mainColor) ;
+    margin: auto;
+    margin-bottom: 3em;
+    background-color: #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 10px grey;
+    height: 70px;
+    width: 80%;
+    align-items: center;
+}
+.proPiss{
+    height: 3px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.proPiss img{
+    width: 60px;
+    height: 60px;
+}
+
+#p1{
+    font-size: 20px;
+    margin-left:10px ;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+
+
+.tip{
+    margin-left: 10px;
+    color: var(--mainColor);
+}
+
+.exercise-container{
+    border: 1px solid;
+    width: fit-content;
+    margin: auto;
+    border-radius: 20px;
+    backdrop-filter: blur(33px);
+    border: none;
+    box-shadow: 0 0 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+#plBut{
+    margin: auto;
+    padding: 15px 25px;
+    background-color: var(--mainColor);
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 0 10px rgb(184, 169, 141);
+}
+h1{
+    color: var(--mainColor);
+}
+#plBut:hover{
+    box-shadow: 0 0 0 ;
+    color: black;
+    background:rgb(190, 186, 186) ;
+}
+
+.profile_picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-left: 20px;
+    scale: 2;
+}
+.profileLink{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+#progress {
+    width: 50%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+#progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: var(--mainColor);
+    border-radius: 25px;
+}
+
+.piano{
+    background-image: url(../Images/Piano.jpg);
+    height: 200px;
+    width: 568px;
+    background-position: contain;
+    display: flex;
+    align-items: end;
+    margin-top:20px;
+    scale: 0.8;
+}
+
+.piano button{
+    height: 80px;
+    width: 81px;
+    background-color: white;  
+    border-top: 0;
+}
+
+#j1:hover{
+    background-color: rgb(205, 60, 60);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+#j2:hover{
+    background-color: rgb(209, 126, 38);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+#j3:hover{
+    background-color: rgb(236, 247, 29);
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+    scale: 1.05;
+}
+#j4:hover{
+    background-color: rgb(61, 213, 41);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+#j5:hover{
+    background-color: rgb(60, 205, 200);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+#j6:hover{
+    background-color: rgb(123, 39, 225);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+#j7:hover{
+    background-color: rgb(231, 12, 180);
+    color: white;
+    font-weight: bold;
+    scale: 1.05;
+}
+
+
+.buttons-div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
